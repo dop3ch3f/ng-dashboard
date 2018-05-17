@@ -1,0 +1,32 @@
+[debug] [2017-10-28T22:25:30.893Z] ----------------------------------------------------------------------
+[debug] [2017-10-28T22:25:30.893Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Dop3Ch3f\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2017-10-28T22:25:30.893Z] CLI Version:   3.13.1
+[debug] [2017-10-28T22:25:30.893Z] Platform:      win32
+[debug] [2017-10-28T22:25:30.893Z] Node Version:  v6.10.3
+[debug] [2017-10-28T22:25:30.893Z] Time:          Sat Oct 28 2017 23:25:30 GMT+0100 (W. Central Africa Standard Time)
+[debug] [2017-10-28T22:25:30.893Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-10-28T22:25:30.909Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-28T22:25:30.909Z] > authorizing via signed-in user
+[debug] [2017-10-28T22:25:30.909Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-10-28T22:25:30.909Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/oWnpVMkTydxu5fpUa10tFRNMrX3M474UgvkQOTJxv0g',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sat Oct 28 2017 23:25:30 GMT+0100 (W. Central Africa Standard Time)
+[debug] [2017-10-28T22:25:32.357Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-28T22:25:32.378Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/smart-order-f742c  
+ Sat Oct 28 2017 23:25:32 GMT+0100 (W. Central Africa Standard Time)
+[debug] [2017-10-28T22:25:33.814Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-28T22:25:33.814Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/smart-order-f742c/tokens  
+ Sat Oct 28 2017 23:25:33 GMT+0100 (W. Central Africa Standard Time)
+[debug] [2017-10-28T22:25:34.849Z] <<< HTTP RESPONSE 200
+[info] 1
+[info] 
+[info] === Deploying to 'smart-order-f742c'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing dist directory for upload...
+[debug] [2017-10-28T22:25:39.446Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/smart-order-f742c/uploads/-Kx_4n_STSSGfb5110sr?fileCount=68&message=  
+ Sat Oct 28 2017 23:25:39 GMT+0100 (W. Central Africa Standard Time)

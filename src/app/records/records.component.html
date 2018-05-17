@@ -1,0 +1,136 @@
+<div class="container-fluid">
+    <form>
+        <div class="row">
+            <div class="card">
+                <div class="header text-center">
+                    <h6>Filter Results</h6>
+                </div>
+                <div class="content">
+                    <div class="row" style="display:inline;">
+                        <div class="col-md-4 col-sm-12  text-center">
+                            <div class="form-group">
+                                <div class="form-group" [ngSwitch]="categoryOne">
+                                    <select *ngSwitchCase="'1'" class="form-control border-input" id="cat2">
+                                        <option *ngFor="let item of items1">{{item.value}}</option>
+                                    </select>
+                                    <select *ngSwitchDefault class="form-control border-input" id="cat2">
+                                        <option>Main Category</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-12 text-center">
+                            <div class="form-group" [ngSwitch]="categoryOne">
+                                <select *ngSwitchCase="'1'" class="form-control border-input" id="cat2">
+                                    <option *ngFor="let item of items1">{{item.value}}</option>
+                                </select>
+                                <select *ngSwitchCase="'2'" class="form-control border-input" id="cat2">
+                                    <option *ngFor="let item of items2">{{item.value}}</option>
+                                </select>
+                                <select *ngSwitchCase="'3'" class="form-control border-input" id="cat2">
+                                    <option *ngFor="let item of items3">{{item.value}}</option>
+                                </select>
+                                <select *ngSwitchCase="'4'" class="form-control border-input" id="cat2">
+                                    <option *ngFor="let item of items4">{{item.value}}</option>
+                                </select>
+                                <select *ngSwitchCase="'5'" class="form-control border-input" id="cat2">
+                                    <option *ngFor="let item of items5">{{item.value}}</option>
+                                </select>
+                                <select *ngSwitchCase="'6'" class="form-control border-input" id="cat2">
+                                    <option *ngFor="let item of items6">{{item.value}}</option>
+                                </select>
+                                <select *ngSwitchCase="'7'" class="form-control border-input" id="cat2">
+                                    <option *ngFor="let item of items7">{{item.value}}</option>
+                                </select>
+                                <select *ngSwitchCase="'8'" class="form-control border-input" id="cat2">
+                                    <option *ngFor="let item of items8">{{item.value}}</option>
+                                </select>
+                                <select *ngSwitchCase="'9'" class="form-control border-input" id="cat2">
+                                    <option *ngFor="let item of items9">{{item.value}}</option>
+                                </select>
+                                <select *ngSwitchDefault class="form-control border-input" id="cat2">
+                                    <option>Sub-Category</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 text-center">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-input" placeholder="Search">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-warning btn-fill" type="submit">
+                                        <i class="ti-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="row">
+        <div class="card">
+            <div class="header text-center">
+                <div class="row">
+                    <br class="hidden-md hidden-lg"/>
+                    <div class="col-md-6 col-sm-12 ">
+                        <p>Record Notifications</p>
+                    </div>
+                    <br class="hidden-md hidden-lg"/>
+                    <div class="col-md-3 col-sm-12 ">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-xs-2">
+                                    <p>To:</p>
+                                </div>
+                                <div class="col-xs-10">
+                                    <date-picker ngModel name="to" [showClearButton]=false mode="date"></date-picker>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br class="hidden-md hidden-lg"/>
+                    <div class="col-md-3 col-sm-12 ">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <p>From: </p>
+                                </div>
+                                <div class="col-xs-9">
+                                    <date-picker ngModel name="from" [showClearButton]=false mode="date" placeholder="from"></date-picker>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content ">
+                <table class="table table-hover table-responsive table-full-width">
+                    <thead>
+                        <tr>
+                            <th *ngFor="let cell of tableData1.headerRow">{{ cell }}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let row of tableData2">
+                            <td>
+                                <i class="{{row.status}}"></i>
+                            </td>
+                            <td>{{row.mc}}</td>
+                            <td>{{row.sc}}</td>
+                            <td>{{row.b}}</td>
+                            <td>{{row.n}}</td>
+                            <td>{{row.t}}</td>
+                            <td>{{row.is}}</td>
+                            <td>{{row.cs}}</td>
+                            <td>{{row.price | currency:'AUD':true}}</td>
+                            <td>
+                                <button class="ti-arrow-circle-right btn-fill btn btn-warning" type="submit" value="{{row.id}}"></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

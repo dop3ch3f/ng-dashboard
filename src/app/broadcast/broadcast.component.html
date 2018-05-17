@@ -1,0 +1,61 @@
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-lg-4 col-md-5">
+          <div class="card card-user">
+                <div class="image">
+                    <img src="assets/img/background.jpg" alt="..." />
+                </div> 
+              <div class="content">
+                <hr/>
+                <h4 class="description text-center">Current Broadcast</h4>
+                <hr/>
+                  <h4 class="description text-center">
+                     10th Annivesary 10% off all goods.
+                  </h4>    
+              </div>       
+          </div>
+      </div>
+      <div class="col-lg-8 col-md-7">
+          <div class="card">
+              <div class="header text-center">
+                  <h4>Update Broadcast</h4>
+              </div>
+              <div class="content">
+                  <form>
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="form-group">
+                                  <label for="exampleInputEmail1">Title:</label>
+                                  <input type="text" class="form-control border-input" placeholder="Title of Broadcast Message goes here">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="form-group">
+                                  <label>Attach Image:</label>
+                                  <input type="file" class="form-control border-input">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="form-group">
+                                  <label>Display Message</label>
+                                  <textarea rows="5" class="form-control border-input" placeholder="Maxmimum 150 characters" (keypress)="decrement($event)" (keypress.backspace)="increment($event)" ></textarea>
+                                  <span class="pull-right text-green">{{rText}}</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="text-center">
+                          <button type="submit" class="btn btn-warning btn-fill btn-md">Update Broadcast</button>
+                      </div>
+                      <div class="clearfix"></div>
+                  </form>
+              </div>
+          </div>
+      </div>
+
+
+  </div>
+</div>
