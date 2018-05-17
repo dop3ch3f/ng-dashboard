@@ -11,8 +11,7 @@ import { UpgradeComponent } from './upgrade/upgrade.component';
 export const AppRoutes: Routes = [
     {
         path: '',
-        redirectTo: 'dashboard',
-        pathMatch: 'full',
+        component: DashboardComponent,
     },
     {
         path: 'broadcast',
